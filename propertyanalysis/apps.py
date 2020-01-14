@@ -1,4 +1,4 @@
 from django.apps import AppConfig
 
 class propertyanalysisConfig(AppConfig):
-    name = 'propertanalysis'
+    name = 'propertyanalysis'
