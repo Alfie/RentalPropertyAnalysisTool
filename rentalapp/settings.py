@@ -16,7 +16,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-SECRET_KEY = ''
+SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 # Application definition
 
 INSTALLED_APPS = [
