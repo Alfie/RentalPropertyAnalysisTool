@@ -6,11 +6,11 @@ from django.views import generic
 from . models import Property
 
 def index(request):
-    return render(request, 'propertyanalysis/index.html')
-
-def calc(request):
     property1 = Property(rental_income=request.POST['rincome'])
     property1.save()
     test = property1
     context = {'test' : test}
+    return render(request, 'propertyanalysis/index.html')
+
+def calc(request):
     return render(request, 'propertyanalysis/index.html', context)
