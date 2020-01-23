@@ -4,6 +4,9 @@ from django.urls import reverse
 from django.views import generic
 
 def index(request):
+    return render(request, 'propertyanalysis/index.html')
+
+def calc(request):
     test = request.POST['rincome']
     context = {'test' : test}
     return render(request, 'propertyanalysis/index.html', context)
