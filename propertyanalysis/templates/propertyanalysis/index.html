@@ -11,7 +11,13 @@
       Laundry income: <input type="text" name="lincome"><br>
       Storage income: <input type="text" name="sincome"><br>
       Misc income: <input type="text" name="mincome"><br>
-      {{test}}
+      {% if test %}
+        {% for t in test %}
+          <li>{{t.rental_income}}</li>
+        {% endfor %}
+      {% else %}
+        <p>No properties available</p>
+    {% endif %}
     </div>
     
     <div class="column">
