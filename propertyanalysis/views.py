@@ -5,7 +5,8 @@ from django.views import generic
 
 from . models import Property
 
+property1 = Property(rental_income=7)
+property1.save()
+
 def index(request):
-    property1 = Property(rental_income=7)
-    property1.save()
     return render(request, 'propertyanalysis/index.html')
