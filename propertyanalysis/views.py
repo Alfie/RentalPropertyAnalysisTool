@@ -10,4 +10,5 @@ property1.save()
 
 def index(request):
     test = Property.objects.all()
-    return render(request, 'propertyanalysis/index.html', {'test': test})
+    context = {'test': test}
+    return render(request, 'propertyanalysis/index.html', context)
