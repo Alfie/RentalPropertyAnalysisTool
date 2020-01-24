@@ -1,2 +1,2 @@
-release: ./release.sh
+chmod u+x release.sh && ./release.sh
 web: gunicorn rentalapp.wsgi
