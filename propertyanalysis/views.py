@@ -5,9 +5,6 @@ from django.views import generic
 
 from .models import Property
 
-property1 = Property(rental_income=7)
-property1.save()
-
 def index(request):
     test = Property.objects.all()
     context = {'test': test}
