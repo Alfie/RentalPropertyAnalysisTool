@@ -9,4 +9,5 @@ property1 = Property(rental_income=7)
 property1.save()
 
 def index(request):
-    return render(request, 'propertyanalysis/index.html')
+    test = property1.objects.all()
+    return render(request, 'propertyanalysis/index.html', {'test': test})
