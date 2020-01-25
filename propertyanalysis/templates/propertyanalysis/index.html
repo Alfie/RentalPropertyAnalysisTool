@@ -4,7 +4,7 @@
 
   <link rel="stylesheet" type="text/css" href="{% static 'propertyanalysis/style.css' %}">
 
-  <form action=#>
+  <form action={% url ‘propertyanalysis:edit’ %}>
     <div class="column">
       <b>Income</b><br>
       Rental income: <input type="text" name="rincome"><br>
