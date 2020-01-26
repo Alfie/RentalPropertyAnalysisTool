@@ -11,8 +11,8 @@ def index(request):
     return render(request, 'propertyanalysis/index.html', context)
 
 def edit(request):
-    #p2 = Property(rental_income=request.POST['rincome'])
-    #p2.save()
-    #test = Property.objects.all()
-    #context = {'test': test}
+    p2 = Property(rental_income=request.POST['rincome'])
+    p2.save()
+    test = Property.objects.all()
+    context = {'test': test}
     return render(request, 'propertyanalysis/edit.html', context)
