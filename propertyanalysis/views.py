@@ -15,4 +15,4 @@ def edit(request):
     p2.save()
     test = Property.objects.all()
     context = {'test': test}
-    return render(request, 'propertyanalysis/index.html', context)
+    return render(request, 'propertyanalysis/edit.html', context)
